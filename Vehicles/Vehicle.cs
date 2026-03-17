@@ -21,5 +21,20 @@ namespace Vehicles
         {
             EngineType.Start();
         }
+
+        public void Drive()
+        {
+            // check if running 
+            if (EngineType.Running)
+            {
+                Accelerate();
+            }
+            else
+            {
+                Console.WriteLine($"{Make} {Model} is not running.");
+            }
+        }
+
+        protected abstract void Accelerate();
     }
 }
