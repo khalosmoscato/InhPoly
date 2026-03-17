@@ -8,7 +8,7 @@ namespace Shapes
     {
         public Shape BaseShape { get; set; }
 
-        public Shape3D() { }
+        public Shape3D(Shape baseShape) { this.BaseShape = baseShape; }
         public abstract double CalculateVolume();
     }
 }
