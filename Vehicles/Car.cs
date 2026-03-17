@@ -6,9 +6,9 @@ namespace Vehicles
 {
     internal class Car : Vehicle
     {
-        public Car(string make, string model, Engine engineType) : base(make, model, new CarEngine()) { }
+        public Car(string make, string model) : base(make, model, new CarEngine()) { }
         
-        public void Accelerate()
+        protected override void Accelerate()
         {
             string message = $"{Make} {Model} speed: ";
             double fuelMod = EngineType.FuelType switch

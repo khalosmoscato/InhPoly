@@ -7,12 +7,12 @@ namespace Vehicles
     internal class Motorcycle : Vehicle
     {
         public bool HasSidecar { get; set; }
-        public Motorcycle(string make, string model, Engine engineType, bool hasSideCar) : base(make, model, new MotorcycleEngine()) 
+        public Motorcycle(string make, string model, bool hasSideCar) : base(make, model, new MotorcycleEngine()) 
         {
             this.HasSidecar = hasSideCar;
         }
 
-        public void Accelerate()
+        protected override void Accelerate()
         {
             string message = $"{Make} {Model} speed: ";
             double fuelMod = EngineType.FuelType switch

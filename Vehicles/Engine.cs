@@ -7,11 +7,11 @@ namespace Vehicles
     public abstract class Engine
     {
         public bool Running { get; set; }
-        public int Horsepower { get; set; }
+        public int HorsePower { get; set; }
         public FuelType FuelType { get; set; }
         protected Engine(int horsepower, FuelType fuelType)
         {
-            this.Horsepower = horsepower;
+            this.HorsePower = horsepower;
             this.FuelType = fuelType;
             this.Running = false;
         }

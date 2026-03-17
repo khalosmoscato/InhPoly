@@ -4,7 +4,8 @@ using System.Text;
 
 namespace Vehicles
 {
-    internal class MotorcycleEngine
+    internal class MotorcycleEngine : Engine
     {
+        public MotorcycleEngine() : base(65, FuelType.Unleaded) { }   
     }
 }
