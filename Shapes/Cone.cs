@@ -10,7 +10,7 @@ namespace Shapes
         public Cone(double height, Circle Circle) : base(Circle) { this.Height = height; }
         public override double CalculateVolume()
         {
-            throw new NotImplementedException();
+            return BaseShape.CalculateArea() * Height / 3;
         }
     }
 }

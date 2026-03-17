@@ -10,7 +10,7 @@ namespace Shapes
         public Pyramid(double height, Triangle Triangle) : base(Triangle) { this.Height = height; }
         public override double CalculateVolume()
         {
-            throw new NotImplementedException();
+            return BaseShape.CalculateArea() * Height / 3;
         }
     }
 }

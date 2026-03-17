@@ -12,7 +12,7 @@ namespace Shapes
 
         public override double CalculateVolume()
         {
-            throw new NotImplementedException();
+            return BaseShape.CalculateArea() * Height;
         }
     }
 }
