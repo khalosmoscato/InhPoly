@@ -10,7 +10,7 @@ namespace Shapes
         public Circle(double radius) { this.Radius = radius; }
         public override double CalculateArea()
         {
-            return Radius;
+            return Math.PI * Radius * Radius;
         }
     }
 }
