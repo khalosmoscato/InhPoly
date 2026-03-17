@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Vehicles
 {
-    internal abstract class Engine
+    public abstract class Engine
     {
         public bool Running { get; set; }
         public int Horsepower { get; set; }
@@ -14,6 +14,11 @@ namespace Vehicles
             this.Horsepower = horsepower;
             this.FuelType = fuelType;
             this.Running = false;
+        }
+
+        public void Start()
+        {
+            Running = true;
         }
     }
 }
