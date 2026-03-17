@@ -7,7 +7,7 @@ namespace Shapes
     internal class Pyramid : Shape3D
     {
         public double Height { get; set; }
-        public Pyramid(double height, Triangle Triangle) : base(Triangle) { this.Height = height; }
+        public Pyramid(Triangle Triangle, double height) : base(Triangle) { this.Height = height; }
         public override double CalculateVolume()
         {
             return BaseShape.CalculateArea() * Height / 3;

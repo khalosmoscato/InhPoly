@@ -8,7 +8,7 @@ namespace Shapes
     {
         public double Height { get; set; }
 
-        public Cylinder(double height, Circle Circle) : base(Circle) { this.Height = height; }
+        public Cylinder(Circle Circle, double height) : base(Circle) { this.Height = height; }
 
         public override double CalculateVolume()
         {
